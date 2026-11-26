@@ -139,7 +139,7 @@ jobs:
           cp build_${{ matrix.abi }}/bin/libffprobe.so dist/libffprobe.so
           cd dist && zip -r ../FFmpeg-8.1-FOSS-${{ matrix.abi }}.zip libffmpeg.so libffprobe.so
 
-      - name: Publicar na aba Releases do KEBAABS
+      - name: Publicar na aba Releases
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ffmpeg-foss-v8.1
