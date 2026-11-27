@@ -142,10 +142,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ffmpeg-foss-v8.1
-          name: "FFmpeg 8.1 Android — FOSS (x264 / VP9 / Opus / MP3 / MediaCodec)"
+          name: "FFmpeg 8.1 Android — FOSS (x264 / VP9 / Opus / MP3)"
           body: |
-            Binários estáticos 100% software livre do FFmpeg 8.1 (`libffmpeg.so`) e FFprobe 8.1 (`libffprobe.so`) (`arm64-v8a` e `armeabi-v7a`):
+            Binários estáticos 100% software livre do FFmpeg 8.1 (`libffmpeg.so`) e FFprobe 8.1 (`libffprobe.so`):
             - **libx264** (com NEON ativado no `arm64-v8a`)
-            - **MediaCodec** (`h264_mediacodec` / `hevc_mediacodec`)
             - **libvpx** (VP8 e VP9), **libopus**, **libmp3lame** e encoder AAC nativo
           files: FFmpeg-8.1-FOSS-${{ matrix.abi }}.zip
