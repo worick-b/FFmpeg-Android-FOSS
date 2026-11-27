@@ -119,7 +119,6 @@ jobs:
             --disable-ffplay \
             --disable-doc \
             --disable-debug \
-            --enable-mediacodec \
             --enable-libx264 \
             --enable-libvpx \
             --enable-libopus \
